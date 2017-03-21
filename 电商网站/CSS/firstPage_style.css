@@ -1,0 +1,507 @@
+/*公用*/
+* {
+	font-family: "微软雅黑";
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+/*登录盒子*/
+#mask {
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	display: none;
+}
+#login_box {
+	position: fixed;
+	z-index: 1001;
+	width: 460px;
+	height: 400px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: none;
+}
+#login_box .login_box_title {
+	height: 40px;
+	line-height: 40px;
+	text-indent: 1em;
+	font-size: 18px;
+	color: #fff;
+	background-color: #1d7ad9;
+	
+}
+#login_close {
+	background: url(../images/icon/close.png) right center no-repeat;
+	height: 40px;
+	width: 30px;
+	float: right;
+	cursor: pointer;
+}
+.login_box_cont {
+	padding: 20px 50px;
+}
+.account_cont li {
+	line-height: 60px;
+	font-size: 15px;
+}
+.input_text {
+	height: 30px;
+	width: 250px;
+	border: 1px solid #ccc;
+	padding: 0 30px 0 5px;
+	background: url(../images/icon/user_icon.jpg) right center no-repeat;
+}
+.login_btn {
+	text-align: center;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	font-size: 17px;
+	width: 330px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: url(../images/icon/login_btn.jpg) left center repeat-x;
+	cursor: pointer;
+}
+.other_website {
+	margin-top: 35px;
+
+}
+.other_website li {
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #000;
+}
+.other_website li a {
+	color: #000;
+}
+.other_website li a:hover {
+	color: orange;
+}
+.other_website li:last-child {
+	border-right: none;
+}
+
+/*头部*/
+	/*头部 收藏&登录*/
+.header {
+	width: 100%;
+}
+.header_welcome {
+	background-color: rgb(247,247,247);
+}
+.header_welcome_content {
+	width: 1000px;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 30px;
+}
+.header_welcome_content .collection {
+	float: left;
+	background: url(../images/icon/collection.jpg) left center no-repeat;
+	padding-left: 20px;
+	font-weight: bold;
+	color: #4E4E4E;
+}
+.header_welcome_content .login {
+	float: right;
+}
+.header_welcome_content .login a:hover {
+	color: red;
+}
+	/*头部 logo*/
+.header_logo {
+	background: rgb(32,122,218);
+}
+.header_logo_content {
+	width: 1000px;
+	height: 85px;
+	margin: 0 auto;
+
+}
+.logo {
+	float: left;
+	height: 60px;
+	margin: 12px 0 0 50px;
+	color: #fff;
+	font-size: 30px;
+}
+.logo p {
+	font-size: 11px;
+	text-align: center;
+}
+.search {
+	float: left;
+	margin: 25px 0 0 180px;
+}
+.search_text,.search_btn,.shop_car {
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+}
+.search_text {
+	width: 350px;
+	padding: 0 10px;
+	float: left;
+	border: none;
+	background-color: #fff;
+}
+.search_btn {
+	width: 70px;
+	float: left;
+	background-color: #ff8c00;
+	color: #fff;
+	border: none;
+}
+.shop_car {
+	float: right;
+	background-color: #ff8c00;
+	margin: 25px 50px 0 0;
+	color: #fff;
+}
+.shop_car_btn {
+	display: inline-block;
+	width: 55px;
+	background: url(../images/icon/shaoIcon.jpg) 8px center no-repeat;
+	padding-left: 35px;
+	border-right: 1px solid #ccc;
+}
+.good_num {
+	display: inline-block;
+	width: 25px;
+	background: url(../images/icon/sj.jpg) 30px center no-repeat;
+	text-align: right;
+	padding-right: 25px;
+}
+
+	/*头部 菜单*/
+.header_nav {
+	background-color: #1369c0;
+}
+.header_nav_content {
+	height: 35px;
+	width: 1000px;
+	margin: 0 auto;
+	/*line-height: 35px;*/
+}
+.all_lists {
+	position: relative;
+}
+.all_lists_title {
+	float: left;
+	width: 190px;
+	line-height: 35px;
+	color: #fff;
+	text-align: center;
+}
+.all_lists_icon {
+	background: url(../images/icon/down.jpg) right center no-repeat;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-left: 10px;
+}
+.header_nav_tab {
+	display: inline-block;
+	line-height: 35px;
+}
+.header_nav_tab li {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+.header_nav_tab li a {
+	color: #fff;
+	width: 100px;
+	display: inline-block;
+}
+.header_nav_tab li a:hover {
+	background-color: #4593fd;
+}
+.header_nav_tab .active {
+	background-color: #4593fd;
+}
+	/*头部 菜单 全部商品分类项目*/
+.all_lists_show {
+	width: 188px;
+	height: 323px;
+	background-color: #4593fd;
+	position: absolute; left: 0px; top: 35px;
+	overflow: hidden;
+	border: 1px solid #3487f2;
+}
+.all_lists_item {
+	height: 54px;
+	color: #fff;
+	border-bottom: 1px solid #3487f2;
+	padding: 10px 0 0 10px;
+	background: url(../images/icon/shop_sj.jpg) 170px center no-repeat;
+}
+.all_lists_item:hover {
+	background-color: #fff;
+	color: #000;
+}
+.all_lists_item:hover dt .b,
+.all_lists_item:hover dd a {
+	color: #000;
+}
+.all_lists_item a:hover {
+	text-decoration: underline;
+} 
+.all_lists_item a {
+	color: #fff;
+}
+.all_lists_item .b {
+	font-size: 14px;
+	line-height: 20px;
+}
+.all_lists_item .aLink {
+	background: url(../images/icon/aLink_bg.png) center no-repeat;
+	width: 50px;
+	text-align: center;
+	display: inline-block;
+}
+	/*头部 菜单 商品分类 详细列表*/
+.shopClass_list {
+	background-color: #fff;
+	position: absolute; left: 190px; top: 35px;
+	border: 2px solid #e5e5e5;
+	z-index: 1;
+}
+.shopClass_cont {
+	width: 570px;
+	height: 380px;
+	margin: 0 20px;
+}
+.shopList_item {
+	padding: 15px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+.shopList_item dt {
+	color: #4b88da;
+	font-weight: bold;
+	height: 25px;
+	line-height: 25px;
+}
+.shopList_item dd {
+	margin-top: -20px;
+	padding-left: 80px;
+}
+.shopList_item dd a {
+	margin-right: 10px;
+	display: inline-block;
+}
+.shopList_item dd a:hover {
+	color: orange;
+}
+.shopList_links a {
+	display: inline-block;
+	padding: 5px;
+	margin: 10px 10px 10px 0;
+	background-color: #2785e6;
+	color: #fff;
+}
+.shopList_links a span {
+	display: inline-block;
+	background: url(../images/icon/shop_sj.jpg) center no-repeat;
+	margin-left: 5px;
+	width: 8px;
+	height: 8px;
+}
+
+
+/*中部 */
+.main {
+	width: 1000px;
+	margin: 0 auto;
+
+}
+.leftArea {
+	float: left;
+}
+.rightArea {
+	float: right;
+}
+	/*中部 banner*/
+.banner {
+	overflow: hidden;
+	position: relative;
+}
+.banner_big {
+	width: 810px;
+	height: 325px;
+/*	margin-left: 190px;*/
+}
+.banner_small {
+	width: 190px;
+	height: 400px;
+	float: left;
+}
+.banner_imgs {
+	position:absolute; 
+	left:0; 
+}
+.banner_imgs_big {
+	width: 3244px;
+}
+.banner_imgs_small {
+	width: 570px;
+}
+.banner_imgs img {
+	float: left;
+}
+.banner_btns {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+
+}
+.banner_btns .btn {
+	width: 8%;
+	height: 10px;
+	margin-right: 5px;
+	display: inline-block;
+	background-color: #fff;
+	cursor: pointer;
+	opacity: 0.9;
+}
+.banner_btns .active {
+	background-color: orange;
+}
+
+	/*中部 商品展示*/
+.good_show {
+	padding-top: 10px;
+	clear: both;
+}
+.good_show_floor {
+	margin-bottom: 440px;
+}
+.good_show_title {
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	background-color: #ccc;
+}
+.good_show_title_name {
+	height: 100%;
+	float: left;
+	padding-left: 20px;	
+	font-size: 25px;
+}
+.good_show_title_name img {
+	float: left;
+	margin: 8px 10px 0 0;
+
+}
+.more {
+	float: right;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.more:hover {
+	text-decoration: underline;
+}
+
+.good_show_body .goods {
+	float: left;
+/*	width: 800px;*/
+	margin-left: 2px;
+	overflow: hidden;
+}
+.big_goods {
+	overflow: hidden;
+}
+.big_goods_item {
+	float: left;
+	width: 200px;
+	height: 278px;
+	border: 1px solid #ccc;
+}
+
+.small_goods_item {
+	float: left;
+}
+.big_goods_item h3 {
+	text-align: center;
+	font-size: 18px;
+}
+.big_goods_item p {
+	text-align: center;
+	font-size: 15px;
+	color: orange;
+}
+
+.small_goods_item {
+	height: 118px;
+	width: 200px;
+	border: 1px solid #ccc;
+
+}
+.small_goods_item_img {
+	float: left;
+	line-height: 119px;
+}
+.small_goods_item_img img {
+	width: 90px;
+	vertical-align: middle;
+}
+
+.small_goods_item_text {
+	margin-top: 30px;
+	padding: 5px;
+
+}
+.small_goods_item_text p {
+	color: orange;
+	font-size: 12px;
+	
+}
+.small_goods_item_text h3 {
+	font-size: 18px;
+}
+
+
+/*尾部*/
+.footer {
+	height: 220px;
+	background-color: #ccc;
+	clear: both;
+	padding-top: 20px;
+}
+.footer_wrap {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer_some_link li {
+	display: inline-block;
+	border-right: 1px solid #333;
+	padding: 0 10px;
+	margin: 30px 0 10px 0;
+}
+.footer_some_link li:last-child {
+	border:none;
+}
+.footer_some_link li a {
+	color: #000;
+}
+.footer_some_link li a:hover {
+	color: orange;
+}
+
+.footer_some_img {
+	margin-top: 30px;
+}
+.footer_some_img img {
+	margin-right: 15px;
+}

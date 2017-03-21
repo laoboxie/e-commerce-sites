@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>筛选页</title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/firstPage_style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/productCategory_style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/selectPage_style.css">
+	<script type="text/javascript" src="JS/firstPage.js"></script>
+	
+</head>
+<body>
+<!-- 登录盒子 -->
+	<div id="mask"></div>
+	<div id="login_box">
+		<h3 class="login_box_title">账户登录<span id="login_close"></span></h3>
+		<div class="login_box_cont">
+			<ul class="account_cont">
+				<li>账户：<input class="input_text" type="text" name=""></li>
+				<li>密码：<input class="input_text" type="password" name=""></li>
+				<li><input id="auto_login" type="checkbox" name=""><label for="auto_login">自动登录</label></li>
+			</ul>
+			<div class="login_btn"><span >登 录</span></div>
+			<div class="other_website">
+				使用合作方账号登陆网站
+				<ul class="websites">
+					<li><a href="#">QQ</a></li>
+					<li><a href="#">网易</a></li>
+					<li><a href="#">新浪</a></li>
+					<li><a href="#">微信</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- 头部 -->
+	<div class="header">
+		<!--头部—— 收藏&注册 -->
+		<div class="header_welcome">
+			<div class="header_welcome_content">
+				<div class="collection">收藏地犬网</div>
+				<div class="login">欢迎来到地犬网！
+					<a href="#" id="login_link">[登录]</a>
+					<a href="#">[免费注册]</a>
+				</div>
+			</div>
+		</div>
+		<!--头部—— logo&搜索 -->
+		<div class="header_logo">
+			<div class="header_logo_content">
+				<div class="logo">
+					地犬网<p class="website">grounddog.com</p>
+				</div>
+				<div class="search">
+					<input class="search_text" type="text" name="" />
+					<input class="search_btn" type="button" name="搜索" value="搜 索" />
+				</div>
+				<div class="shop_car">
+					<span class="shop_car_btn">购物车</span>
+					<span class="good_num">0</span>
+				</div>
+			</div>
+		</div>
+		<!--头部—— 菜单 -->
+		<div class="header_nav">
+			<div class="header_nav_content">
+				<div class="all_lists">
+					<h3 class="all_lists_title">全部商品分类<i class="all_lists_icon"></i></h3>
+					<div class="all_lists_show hide" id="all_lists_items">
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+						</dl>
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+						</dl>
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+						</dl>
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+						</dl>
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+						</dl>
+					</div>
+					<div class="shopClass_list hide" id="detail_item">
+						<div class="shopClass_cont">
+							<dl class="shopList_item">
+								<dt>电脑装机</dt>
+								<dd>
+									<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a>
+								</dd>
+							</dl>
+							<dl class="shopList_item">
+								<dt>电脑装机</dt>
+								<dd>
+									<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+								</dd>
+							</dl>
+							<dl class="shopList_item">
+								<dt>电脑装机</dt>
+								<dd>
+									<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+								</dd>
+							</dl>
+							<dl class="shopList_item">
+								<dt>电脑装机</dt>
+								<dd>
+									<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+								</dd>
+							</dl>
+							<dl class="shopList_item">
+								<dt>电脑装机</dt>
+								<dd>
+									<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+								</dd>
+							</dl>
+							<div class="shopList_links">
+								<a href="#">文字测试内容等等<span></span></a><a href="#">文字容等等<span></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="header_nav_tab" id="header_nav_tab">
+					<li class=""><a href="#">首 页</a></li>
+					<li class=""><a href="#">产品分类</a></li>
+					<li class="active"><a href="#">商品筛选</a></li>
+					<li class=""><a href="#">商品介绍</a></li>
+					<li class=""><a href="#">购物车</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+
+
+<!-- 中部 -->
+	<div class="main">
+		<!-- 中部 左侧 -->
+		<div class="leftArea">
+			<h3 class="cat_title">数码、手机</h3>
+			<div class="category">
+				<div class="cat_list">
+					<h3 >手机类型</h3>
+					<ul>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+						<li><a href="javascript:void(0);">智能手机</a></li>
+						<li><a href="javascript:void(0);">拍照手机</a></li>
+					</ul>
+				</div>
+				<div class="cat_list">
+					<h3 >手机品牌</h3>
+					<ul>
+						<li><a href="javascript:void(0);">苹果手机</a></li>
+						<li><a href="javascript:void(0);">小米手机</a></li>
+						<li><a href="javascript:void(0);">魅族手机</a></li>
+						<li><a href="javascript:void(0);">中兴手机</a></li>
+						<li><a href="javascript:void(0);">一加手机</a></li>
+						<li><a href="javascript:void(0);">华为手机</a></li>
+						<li><a href="javascript:void(0);">三星手机</a></li>
+					</ul>
+				</div>
+				<div class="cat_list">
+					<h3 >手机通讯</h3>
+					<ul>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+					</ul>
+				</div>
+				<div class="cat_list">
+					<h3 >手机通讯</h3>
+					<ul>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+						<li><a href="javascript:void(0);">双卡手机</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 中部 右侧 -->
+		<div class="rightArea">
+			<!-- 中部 选择表框 -->
+			<div class="select_box">
+				<dl class="select_box_item">
+					<dt class="select_cont_title">品牌</dt>
+					<dd class="no_limit"><a href="javascript:void(0);">不限</a></dd>
+					<dd class="select_cont">
+						<ul>
+							<li><a href="javascript:void(0);">Apple/苹果</a></li>
+							<li><a href="javascript:void(0);">Huawei/华为</a></li>
+							<li><a href="javascript:void(0);">Samsung/三星</a></li>
+							<li><a href="javascript:void(0);">Meizu/魅族</a></li>
+							<li><a href="javascript:void(0);">Xiaomi/小米</a></li>
+							<li><a href="javascript:void(0);">OPPO</a></li>
+							<li><a href="javascript:void(0);">Oneplus/一加</a></li>
+							<li><a href="javascript:void(0);">nubiya/努比亚</a></li>
+							<li><a href="javascript:void(0);">Kupai/酷派</a></li>
+							<li><a href="javascript:void(0);">Sony/索尼</a></li>
+						</ul>
+					</dd>
+					<dd class="select_more"><a href="javascript:void(0);">更多选项</a></dd>
+				</dl>
+				<dl class="select_box_item">
+					<dt class="select_cont_title">尺寸</dt>
+					<dd class="no_limit"><a href="javascript:void(0);">不限</a></dd>
+					<dd class="select_cont">
+						<ul>
+							<li><a href="javascript:void(0);">3.0寸</a></li>
+							<li><a href="javascript:void(0);">4.0寸</a></li>
+							<li><a href="javascript:void(0);">4.7寸</a></li>
+							<li><a href="javascript:void(0);">5.5寸</a></li>
+							<li><a href="javascript:void(0);">6.0寸</a></li>
+							<li><a href="javascript:void(0);">6.7寸</a></li>
+						</ul>
+					</dd>
+					<dd class="select_more"><a href="javascript:void(0);">更多选项</a></dd>
+				</dl>
+				<dl class="select_box_item">
+					<dt class="select_cont_title">网络类型</dt>
+					<dd class="no_limit"><a href="javascript:void(0);">不限</a></dd>
+					<dd class="select_cont">
+						<ul>
+							<li><a href="javascript:void(0);">移动4G</a></li>
+							<li><a href="javascript:void(0);">电信4G</a></li>
+							<li><a href="javascript:void(0);">联通4G</a></li>
+							<li><a href="javascript:void(0);">移动4G</a></li>
+							<li><a href="javascript:void(0);">电信4G</a></li>
+							<li><a href="javascript:void(0);">联通4G</a></li>
+						</ul>
+					</dd>
+					<dd class="select_more"><a href="javascript:void(0);">更多选项</a></dd>
+				</dl>
+			</div>
+			<!-- 中部 地址和数量 -->
+			<div class="add_wrap">
+				<div class="address">送至
+					<div class="address_box">
+						<div class="address_selected">深圳南山区
+							<div class="address_selection ">
+								<span class="province">广东省</span>
+								<span class="province">江西省</span>
+								<span class="province">福建省</span>
+								<span class="province">湖南省</span>
+								<span class="province">河北省</span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="goods_num">
+					<input type="checkbox" id="show_good" /><label for="show_good">仅显示有货</label>
+					<span class="show_num">共<span class="total_num">12345</span>件</span>
+				</div>
+			</div>
+			<!-- 中部 产品展示 -->
+			<div class="cat_show">
+				<div class="cat_show_area">
+					<div class="cat_products">
+						<div class="cat_show_product">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product hot">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product hot">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product hot">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+						<div class="cat_show_product hot">
+							<img src="images/des_big.jpg" alt="pad" />
+							<p class="product_intro"><a href="javascript:void(0);">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+							<p class="product_price">￥888</p>
+							<p class="product_comment">评论：<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="comment_num">(99条)</span></p>
+							<a class="add_to_car" href="#">加入购物车</a>
+						</div>
+					</div>
+				</div>
+				<div class="page_num">
+					<a href="javascript:void(0)">上一页</a>
+					<ul>
+						<li><a href="javascript:void(0)">1</a></li>
+						<li><a href="javascript:void(0)">2</a></li>
+						<li><a href="javascript:void(0)">3</a></li>
+						<li><a href="javascript:void(0)">4</a></li>
+						<li><a href="javascript:void(0)">5</a></li>
+						<li><a href="javascript:void(0)">...</a></li>
+						<li><a href="javascript:void(0)">200</a></li>
+					</ul>
+					<a href="javascript:void(0)">下一页</a>
+					<span class="total_page_num">共200页，跳转到</span><input type="text" name="" />页<button type="button">确定</button>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+<!-- 尾部-->
+	<div class="footer">
+		<div class="footer_wrap">
+			<div class="footer_some_link">
+				<ul>
+					<li><a href="javascript:void(0);">慕课简介</a></li>
+					<li><a href="javascript:void(0);">慕课公告</a></li>
+					<li><a href="javascript:void(0);">招纳贤士</a></li>
+					<li><a href="javascript:void(0);">联系我们</a></li>
+					<li>客服热线：400-675-1234</li>
+				</ul>
+			</div>
+			<div class="footer_about">Copyright&nbsp&nbsp©&nbsp&nbsp2006 - 2014 慕课版权所有&nbsp&nbsp&nbsp京ICP备09037834号&nbsp&nbsp&nbsp京ICP证B1034-8373号&nbsp&nbsp&nbsp某市公安局XX分局备案编号：123456789123
+			</div>
+			<div class="footer_some_img">
+				<a href="javascript:void(0);"><img src="images/webLogo.jpg" /></a>
+				<a href="javascript:void(0);"><img src="images/webLogo.jpg" /></a><a href="javascript:void(0);"><img src="images/webLogo.jpg" /></a><a href="javascript:void(0);"><img src="images/webLogo.jpg" /></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
