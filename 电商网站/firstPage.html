@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>电商网站</title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/firstPage_style.css">
+	<script type="text/javascript" src="JS/firstPage.js"></script>
+</head>
+<body>
+<!-- 登录盒子 -->
+	<div id="mask"></div>
+	<div id="login_box">
+		<h3 class="login_box_title">账户登录<span id="login_close"></span></h3>
+		<div class="login_box_cont">
+			<ul class="account_cont">
+				<li>账户：<input class="input_text" type="text" name=""></li>
+				<li>密码：<input class="input_text" type="password" name=""></li>
+				<li><input id="auto_login" type="checkbox" name=""><label for="auto_login">自动登录</label></li>
+			</ul>
+			<div class="login_btn"><span >登 录</span></div>
+			<div class="other_website">
+				使用合作方账号登陆网站
+				<ul class="websites">
+					<li><a href="#">QQ</a></li>
+					<li><a href="#">网易</a></li>
+					<li><a href="#">新浪</a></li>
+					<li><a href="#">微信</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- 头部 -->
+	<div class="header">
+		<!--头部—— 收藏&注册 -->
+		<div class="header_welcome">
+			<div class="header_welcome_content">
+				<div class="collection">收藏地犬网</div>
+				<div class="login">欢迎来到地犬网！
+					<a href="#" id="login_link">[登录]</a>
+					<a href="#">[免费注册]</a>
+				</div>
+			</div>
+		</div>
+		<!--头部—— logo&搜索 -->
+		<div class="header_logo">
+			<div class="header_logo_content">
+				<div class="logo">
+					地犬网<p class="website">grounddog.com</p>
+				</div>
+				<div class="search">
+					<input class="search_text" type="text" name="" />
+					<input class="search_btn" type="button" name="搜索" value="搜 索" />
+				</div>
+				<div class="shop_car">
+					<span class="shop_car_btn">购物车</span>
+					<span class="good_num">0</span>
+				</div>
+			</div>
+		</div>
+		<!--头部—— 菜单 -->
+		<div class="header_nav">
+			<div class="header_nav_content clearfix">
+				<div class="all_lists">
+					<h3 class="all_lists_title">全部商品分类<i class="all_lists_icon"></i></h3>
+					<div class="all_lists_show" id="all_lists_items">
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+							<!-- 详细子列表 -->
+							<div class="shopClass_list hide" id="detail_item">
+								<div class="shopClass_cont">
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<div class="shopList_links">
+										<a href="#">文字测试内容等等<span></span></a><a href="#">文字容等等<span></span></a>
+									</div>
+								</div>
+							</div>
+						</dl>
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+							<!-- 详细子列表 -->
+							<div class="shopClass_list hide" id="detail_item">
+								<div class="shopClass_cont">
+									
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<div class="shopList_links">
+										<a href="#">文字测试内容等等<span></span></a><a href="#">文字容等等<span></span></a>
+									</div>
+								</div>
+							</div>
+						</dl>
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+							<!-- 详细子列表 -->
+							<div class="shopClass_list hide" id="detail_item">
+								<div class="shopClass_cont">
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<div class="shopList_links">
+										<a href="#">文字测试内容等等<span></span></a><a href="#">文字容等等<span></span></a>
+									</div>
+								</div>
+							</div>
+						</dl>
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+							<!-- 详细子列表 -->
+							<div class="shopClass_list hide" id="detail_item">
+								<div class="shopClass_cont">
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<div class="shopList_links">
+										<a href="#">文字测试内容等等<span></span></a><a href="#">文字容等等<span></span></a>
+									</div>
+								</div>
+							</div>
+						</dl>
+						<dl class="all_lists_item">
+							<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
+							<dd><a href="#">荣耀3X</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+							<!-- 详细子列表 -->
+							<div class="shopClass_list hide" id="detail_item">
+								<div class="shopClass_cont">
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+									<dl class="shopList_item">
+										<dt>电脑装机</dt>
+										<dd>
+											<a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a><a href="#">文字字啊</a><a href="#">文字字字啊</a><a href="#">文字啊</a><a href="#">文字</a><a href="#">文字啊</a><a href="#">文字啊</a>
+										</dd>
+									</dl>
+
+									<div class="shopList_links">
+										<a href="#">文字测试内容等等<span></span></a><a href="#">文字容等等<span></span></a>
+									</div>
+								</div>
+							</div>
+						</dl>
+
+
+					</div>
+				</div>
+
+				<ul class="header_nav_tab" id="header_nav_tab">
+					<li class="active"><a href="#">首 页</a></li>
+					<li class=""><a href="#">产品分类</a></li>
+					<li class=""><a href="#">商品筛选</a></li>
+					<li class=""><a href="#">商品介绍</a></li>
+					<li class=""><a href="#">购物车</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+
+
+<!-- 中部 -->
+	<div class="main">
+		<!-- 中部 banner -->
+		<div class="leftArea"></div> 
+		<div class="rightArea">
+			<div class="banner banner_big" id="big_banner">
+				<div class="banner_imgs banner_imgs_big">
+					<img src="images/banner/banner_01.jpg" />
+					<img src="images/banner/banner_02.png" />
+					<img src="images/banner/banner_03.png" />
+					<img src="images/banner/banner_04.png" />
+				</div>
+				<div class="banner_btns">
+					<span class="btn active"></span>
+					<span class="btn"></span>
+					<span class="btn"></span>
+					<span class="btn"></span>
+				</div>
+			</div>
+		</div>
+		<!-- 中部 商品展示 -->
+		<div class="good_show" id="good_show">
+			<!-- 中部 商品展示 1楼-->
+			<div class="good_show_floor">
+				<!-- 中部 商品展示 1楼 标题-->
+				<div class="good_show_title">
+					<p class="good_show_title_name">
+						<img src="images/icon/shopIcon.jpg" />家用电脑
+					</p>
+					<span class="more">更多&gt;&gt;</span>
+				</div>
+				<!-- 中部 商品展示 1楼 主体-->
+				<div class="good_show_body">
+					<div class="banner banner_small" id="small_banner">
+						<div class="banner_imgs banner_imgs_small">
+							<img src="images/banner/banner_sm_01.jpg" />
+							<img src="images/banner/banner_sm_02.jpg" />
+							<img src="images/banner/banner_sm_03.png" />
+						</div>
+						<div class="banner_btns">
+							<span class="btn active"></span>
+							<span class="btn"></span>
+							<span class="btn"></span>
+						</div>
+					</div>
+					<div class="goods">
+						<div class="big_goods">
+							<div class="big_goods_item">
+								<div class="shop_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<h3>HTC新渴望8系列</h3>
+								<p>1899元</p>
+							</div>
+							<div class="big_goods_item">
+								<div class="shop_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<h3>HTC新渴望8系列</h3>
+								<p>1899元</p>
+							</div>
+							<div class="big_goods_item">
+								<div class="shop_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<h3>HTC新渴望8系列</h3>
+								<p>1899元</p>
+							</div>
+							<div class="big_goods_item">
+								<div class="shop_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<h3>HTC新渴望8系列</h3>
+								<p>1899元</p>
+							</div>
+						</div>
+						<div class="small_goods">
+							<div class="small_goods_item">
+								<div class="small_goods_item_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<div class="small_goods_item_text">
+									<p>NFC技术一碰轻松配对！接触屏幕</p>
+									<h3>￥149.00	</h3>
+								</div>
+							</div>
+							<div class="small_goods_item">
+								<div class="small_goods_item_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<div class="small_goods_item_text">
+									<p>NFC技术一碰轻松配对！接触屏幕</p>
+									<h3>￥149.00	</h3>
+								</div>
+							</div>
+							<div class="small_goods_item">
+								<div class="small_goods_item_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<div class="small_goods_item_text">
+									<p>NFC技术一碰轻松配对！接触屏幕</p>
+									<h3>￥149.00	</h3>
+								</div>
+							</div>
+							<div class="small_goods_item">
+								<div class="small_goods_item_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<div class="small_goods_item_text">
+									<p>NFC技术一碰轻松配对！接触屏幕</p>
+									<h3>￥149.00	</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 中部 商品展示 2楼-->
+			<div class="good_show_floor">
+				<!-- 中部 商品展示2楼 标题-->
+				<div class="good_show_title">
+					<p class="good_show_title_name">
+						<img src="images/icon/shopIcon.jpg" />家用电脑
+					</p>
+					<span class="more">更多&gt;&gt;</span>
+				</div>
+				<!-- 中部 商品展示2楼 主体-->
+				<div class="good_show_body">
+					<div class="banner banner_small" id="">
+						<div class="banner_imgs banner_imgs_small">
+							<img src="images/banner/banner_sm_01.jpg" />
+							<img src="images/banner/banner_sm_02.jpg" />
+							<img src="images/banner/banner_sm_03.png" />
+						</div>
+						<div class="banner_btns">
+							<span class="btn active"></span>
+							<span class="btn"></span>
+							<span class="btn"></span>
+						</div>
+					</div>
+					<div class="goods">
+						<div class="big_goods">
+							<div class="big_goods_item">
+								<div class="shop_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<h3>HTC新渴望8系列</h3>
+								<p>1899元</p>
+							</div>
+							<div class="big_goods_item">
+								<div class="shop_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<h3>HTC新渴望8系列</h3>
+								<p>1899元</p>
+							</div>
+							<div class="big_goods_item">
+								<div class="shop_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<h3>HTC新渴望8系列</h3>
+								<p>1899元</p>
+							</div>
+							<div class="big_goods_item">
+								<div class="shop_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<h3>HTC新渴望8系列</h3>
+								<p>1899元</p>
+							</div>
+						</div>
+						<div class="small_goods">
+							<div class="small_goods_item">
+								<div class="small_goods_item_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<div class="small_goods_item_text">
+									<p>NFC技术一碰轻松配对！接触屏幕</p>
+									<h3>￥149.00	</h3>
+								</div>
+							</div>
+							<div class="small_goods_item">
+								<div class="small_goods_item_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<div class="small_goods_item_text">
+									<p>NFC技术一碰轻松配对！接触屏幕</p>
+									<h3>￥149.00	</h3>
+								</div>
+							</div>
+							<div class="small_goods_item">
+								<div class="small_goods_item_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<div class="small_goods_item_text">
+									<p>NFC技术一碰轻松配对！接触屏幕</p>
+									<h3>￥149.00	</h3>
+								</div>
+							</div>
+							<div class="small_goods_item">
+								<div class="small_goods_item_img">
+									<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+								</div>
+								<div class="small_goods_item_text">
+									<p>NFC技术一碰轻松配对！接触屏幕</p>
+									<h3>￥149.00	</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- 尾部-->
+	<div class="footer">
+		<div class="footer_wrap">
+			<div class="footer_some_link">
+				<ul>
+					<li><a href="javascript:void(0);">慕课简介</a></li>
+					<li><a href="javascript:void(0);">慕课公告</a></li>
+					<li><a href="javascript:void(0);">招纳贤士</a></li>
+					<li><a href="javascript:void(0);">联系我们</a></li>
+					<li>客服热线：400-675-1234</li>
+				</ul>
+			</div>
+			<div class="footer_about">Copyright&nbsp&nbsp©&nbsp&nbsp2006 - 2014 慕课版权所有&nbsp&nbsp&nbsp京ICP备09037834号&nbsp&nbsp&nbsp京ICP证B1034-8373号&nbsp&nbsp&nbsp某市公安局XX分局备案编号：123456789123
+			</div>
+			<div class="footer_some_img">
+				<a href="javascript:void(0);"><img src="images/webLogo.jpg" /></a>
+				<a href="javascript:void(0);"><img src="images/webLogo.jpg" /></a><a href="javascript:void(0);"><img src="images/webLogo.jpg" /></a><a href="javascript:void(0);"><img src="images/webLogo.jpg" /></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
