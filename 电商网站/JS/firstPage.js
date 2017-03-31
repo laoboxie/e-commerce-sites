@@ -1,4 +1,23 @@
 window.onload=function(){
+
+	if(typeof(firstPage_onload) != 'undefined'){
+		firstPage_onload();
+	}
+	if(typeof(selectPage_onload) != 'undefined'){
+		selectPage_onload();
+	}
+	if(typeof(goodIntroduce_onload) != 'undefined'){
+		goodIntroduce_onload();
+	}
+	if(typeof(shoppingCart_onload) != 'undefined'){
+		shoppingCart_onload();
+	}
+
+}
+
+
+
+function firstPage_onload(){
 	navigation();	//导航跳转页面
 	list_items_show();	//绑定商品分类hover
 	// alert("1");
@@ -35,12 +54,14 @@ function navigation(){
 function list_items_show(){
 	var lists_item = document.getElementById('all_lists_items');
 	var items = lists_item.getElementsByClassName('all_lists_item');
-	var detail_item = document.getElementById('detail_item');
+	
 	for (var i = 0; i < items.length; i++) {
 		items[i].onmouseover=function(){
+			var detail_item = this.getElementsByClassName('shopClass_list')[0];
 			detail_item.className="shopClass_list show";
 		}
 		items[i].onmouseout=function(){
+			var detail_item = this.getElementsByClassName('shopClass_list')[0];
 			detail_item.className="shopClass_list hide";
 		}
 	}
@@ -110,4 +131,14 @@ function set_login_box_pos(){	//设置登录盒子的位置
 	var box_w = login_box.offsetWidth;
 	login_box.style.top=client_h/2-box_h/2+"px";
 	login_box.style.left=client_w/2-box_w/2+"px";
+}
+
+
+
+function get(id){
+	if(id.substr(0,1)=='.'){
+		return document.getElementsByClassName(id.substr(1));
+	}else{
+		return document.getElementById(id);
+	}
 }

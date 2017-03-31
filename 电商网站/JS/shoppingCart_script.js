@@ -1,26 +1,13 @@
-// function addLoadEvent(func) { 
-// 	var oldonload = window.onload; 
-// 	if (typeof window.onload != 'function') { 
-// 		window.onload = func; 
-// 	} else { 
-// 	window.onload = function() { 
-// 		oldonload(); 
-// 		func(); 
-// 	} 
-// 	} 
-// } 
-(function(){
-	if ( typeof(document.addEventListener) != "undefined" ) { 
-		document.addEventListener("load",shopping_cart,true); 
-	} else { 
-		document.attachEvent("onload",shopping_cart); 
-	} 
-})();
-// window.onload=function () {
+
+function shoppingCart_onload(){
+	shopping_cart();
+}
+
 function shopping_cart(){
-	// alert("5");
+
 	var cartTable = get("cartTable");
-	var tr = document.getElementsByTagName('tbody')[0].rows;
+	var tbody = document.getElementsByTagName('tbody')[0];
+	var tr = tbody.getElementsByTagName('tr');
 	var checkall = get(".check-all");
 	var checkboxs = get(".checkbox");
 	var price = get(".price");
@@ -190,12 +177,3 @@ function shopping_cart(){
 	checkall[0].onclick();
 }
 
-
-
-function get(id){
-	if(id.substr(0,1)=='.'){
-		return document.getElementsByClassName(id.substr(1));
-	}else{
-		return document.getElementById(id);
-	}
-}
