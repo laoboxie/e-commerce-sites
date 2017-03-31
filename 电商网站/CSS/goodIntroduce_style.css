@@ -110,6 +110,7 @@ body {
 }
 .good_select_box .active {
 	border-color: #1369c0;
+	box-shadow: 0px 0px 4px 1px #1369c0;
 }
 .the_good_banben dt{
 	margin-top: -30px;

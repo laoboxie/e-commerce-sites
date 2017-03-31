@@ -8,7 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="CSS/productCategory_style.css">
 	<link rel="stylesheet" type="text/css" href="CSS/selectPage_style.css">
 	<link rel="stylesheet" type="text/css" href="CSS/goodIntroduce_style.css">
+	<script type="text/javascript" src="JS/goodIntroduce_script.js"></script>
 	<script type="text/javascript" src="JS/firstPage.js"></script>
+	
 </head>
 <body>
 <!-- 登录盒子 -->
@@ -182,37 +184,38 @@
 						<dt>送到</dt>
 						<dd>
 							<div class="address_box">
-								<div class="address_selected" >深圳 南山区
+								<div class="address_selected" id="address_box"><span id="text_cont">深圳市 南山区</span>
 									<div class="address_selection hide">
-										<span class="province">广东省</span>
-										<span class="province">江西省</span>
-										<span class="province">福建省</span>
-										<span class="province">湖南省</span>
-										<span class="province">河北省</span>
+										<span class="province">福田区</span>
+										<span class="province">罗湖区</span>
+										<span class="province">南山区</span>
+										<span class="province">龙岗区</span>
+										<span class="province">宝安区</span>
 									</div>
 								</div>
+								
 							</div>
 							<span class="if_have">有货，可当日出货</span>
 						</dd>
 					</dl>
-					<dl class="the_good_color">
+					<dl class="the_good_color" id="color_select">
 						<dt>选择颜色</dt>
 						<dd><a href="#" class="active">白色</a><a href="#">黑色</a><a href="#">银色</a></dd>
 					</dl>
-					<dl class="the_good_banben">
+					<dl class="the_good_banben" id="banben_select">
 						<dt>选择版本</dt>
 						<dd><a href="#">WIFI 16G</a><a href="#">WIFI 32G</a><a href="#" class="active">WIFI 64G</a><a href="#">WIFI+4g 32G</a><a href="#">WIFI+4g 64G</a><a href="#">WIFI+4g 64G</a><a href="#">WIFI+4g 128G</a></dd>
 					</dl>
-					<dl class="the_good_num">
+					<dl class="the_good_num" id="num_select" onselectstart="return false;" style="-moz-user-select:none;">
 						<dt>选择数量</dt>
 						<dd>
-							<span class="reduce">-</span><span class="num"><input type="text" name="" value="1"></span><span class="increase">+</span><i class="xiangou">限购<em>9</em>件</i>
+							<span class="reduce" id="num_reduce">-</span><span class="num"><input id="num_text" type="text" name="" value="1"></span><span id="num_increase" class="increase">+</span><i class="xiangou">限购<em>9</em>件</i>
 						</dd>
 					</dl>
 				</div>
 				
 				<div class="has_selected">
-					已选择 "<span>白色 | </span><span>WIFI 64G</span>"
+					已选择 "<span id="color_selected">白色</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="banben_selected">WIFI 64G</span>"
 				</div>
 				<div class="add_or_buy">
 					<a href="#" class="add_to_cart">加入购物车</a>

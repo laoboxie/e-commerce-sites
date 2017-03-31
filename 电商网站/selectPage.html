@@ -7,7 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="CSS/firstPage_style.css">
 	<link rel="stylesheet" type="text/css" href="CSS/productCategory_style.css">
 	<link rel="stylesheet" type="text/css" href="CSS/selectPage_style.css">
+
+	
 	<script type="text/javascript" src="JS/firstPage.js"></script>
+	<script type="text/javascript" src="JS/selectPage_script.js"></script>
 	
 </head>
 <body>
@@ -192,9 +195,9 @@
 		<div class="rightArea">
 			<!-- 中部 选择表框 -->
 			<div class="select_box">
-				<dl class="select_box_item">
+				<dl class="select_box_item" id="pinpai">
 					<dt class="select_cont_title">品牌</dt>
-					<dd class="no_limit"><a href="javascript:void(0);">不限</a></dd>
+					<dd class="no_limit"><a class="active" href="javascript:void(0);">不限</a></dd>
 					<dd class="select_cont">
 						<ul>
 							<li><a href="javascript:void(0);">Apple/苹果</a></li>
@@ -209,11 +212,11 @@
 							<li><a href="javascript:void(0);">Sony/索尼</a></li>
 						</ul>
 					</dd>
-					<dd class="select_more"><a href="javascript:void(0);">更多选项</a></dd>
+					<dd class="select_more" flag="1"><a href="javascript:void(0);">更多选项</a></dd>
 				</dl>
-				<dl class="select_box_item">
+				<dl class="select_box_item" id="chicun">
 					<dt class="select_cont_title">尺寸</dt>
-					<dd class="no_limit"><a href="javascript:void(0);">不限</a></dd>
+					<dd class="no_limit"><a class="active" href="javascript:void(0);">不限</a></dd>
 					<dd class="select_cont">
 						<ul>
 							<li><a href="javascript:void(0);">3.0寸</a></li>
@@ -224,11 +227,11 @@
 							<li><a href="javascript:void(0);">6.7寸</a></li>
 						</ul>
 					</dd>
-					<dd class="select_more"><a href="javascript:void(0);">更多选项</a></dd>
+					
 				</dl>
-				<dl class="select_box_item">
+				<dl class="select_box_item" id="wangluo">
 					<dt class="select_cont_title">网络类型</dt>
-					<dd class="no_limit"><a href="javascript:void(0);">不限</a></dd>
+					<dd class="no_limit"><a class="active" href="javascript:void(0);">不限</a></dd>
 					<dd class="select_cont">
 						<ul>
 							<li><a href="javascript:void(0);">移动4G</a></li>
@@ -239,20 +242,20 @@
 							<li><a href="javascript:void(0);">联通4G</a></li>
 						</ul>
 					</dd>
-					<dd class="select_more"><a href="javascript:void(0);">更多选项</a></dd>
+					
 				</dl>
 			</div>
 			<!-- 中部 地址和数量 -->
 			<div class="add_wrap">
 				<div class="address">送至
 					<div class="address_box">
-						<div class="address_selected">深圳南山区
-							<div class="address_selection ">
-								<span class="province">广东省</span>
-								<span class="province">江西省</span>
-								<span class="province">福建省</span>
-								<span class="province">湖南省</span>
-								<span class="province">河北省</span>
+						<div class="address_selected" id="address_box"><span id="text_cont">深圳市 南山区</span>
+							<div class="address_selection hide">
+								<span class="province">福田区</span>
+								<span class="province">罗湖区</span>
+								<span class="province">南山区</span>
+								<span class="province">龙岗区</span>
+								<span class="province">宝安区</span>
 							</div>
 						</div>
 						
@@ -396,4 +399,5 @@
 		</div>
 	</div>
 </body>
+
 </html>

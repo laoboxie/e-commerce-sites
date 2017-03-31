@@ -9,11 +9,24 @@
 	overflow: auto;
 	line-height: 25px;
 }
+.select_box a {
+	color: #000;
+	display: inline-block;
+	padding: 2px 2px;
+}
+.select_box .active {
+	color: #fff;
+	background-color: #1d7ad9;
+}
 .select_box_item {
 	border-bottom: 2px dotted #ccc;
 	overflow: auto;
 	padding: 5px 0;
 	position: relative;
+}
+#pinpai {
+	height: 23px;
+	overflow: hidden;
 }
 .select_box_item:last-child {
 	border-bottom: none;
@@ -29,12 +42,7 @@
 	width: 60px;
 	text-align: right;
 }
-.no_limit a {
-	color: #fff;
-	background-color: #1d7ad9;
-	display: inline-block;
-	padding: 0 2px;
-}
+
 .select_cont {
 	margin-left: 30px;
 	width: 630px;
@@ -43,6 +51,7 @@
 	float: left;
 	padding-right: 30px;
 }
+
 .cat_show {
 	clear: both;
 }
@@ -79,7 +88,9 @@
 .address_selection {
 	position: absolute; left: 0; top: 24px;
 	background-color: #fff;
+	box-sizing: border-box;  
 	border: 1px solid #ccc;
+	margin-right: -5px;
 	line-height: 20px;
 	width: 100%;
 	z-index: 4;
@@ -91,7 +102,9 @@
 	display: block;
 	border-bottom: 1px solid #ccc;
 	text-indent: 3px;
-
+}
+.address_selection span:hover {
+	color: orange;
 }
 
 .goods_num {

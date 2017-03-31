@@ -1,6 +1,8 @@
 /*公用*/
 * {
 	font-family: "微软雅黑";
+	padding: 0;
+	margin: 0;
 }
 .hide {
 	display: none;
@@ -235,7 +237,7 @@
 	height: 323px;
 	background-color: #4593fd;
 	position: absolute; left: 0px; top: 35px;
-	overflow: hidden;
+/*	overflow: hidden;*/
 	border: 1px solid #3487f2;
 }
 .all_lists_item {
@@ -272,13 +274,13 @@
 	/*头部 菜单 商品分类 详细列表*/
 .shopClass_list {
 	background-color: #fff;
-	position: absolute; left: 190px; top: 35px;
+	position: absolute; left: 188px; top: 0px;
 	border: 2px solid #e5e5e5;
 	z-index: 1;
 }
 .shopClass_cont {
 	width: 570px;
-	height: 380px;
+/*	height: 380px;*/
 	margin: 0 20px;
 }
 .shopList_item {
